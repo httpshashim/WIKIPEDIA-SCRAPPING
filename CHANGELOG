@@ -1,0 +1,51 @@
+# 📝 Changelog – Wikipedia GDP Scraper
+
+All notable changes to this project will be documented in this file.
+
+# [1.0.0] – 2025-09-26
+
+Initial Release
+
+# ✅ Features
+
+Added web scraper using Python, Requests, and BeautifulSoup4
+
+Scrapes Wikipedia GDP (nominal) data by country/territory
+
+Converts scraped HTML table into a clean Pandas DataFrame
+
+Cleans column names and removes footnote markers [1], [a]
+
+Saves cleaned dataset to CSV (data/gdp_by_country.csv)
+
+Provides mini EDA: shape, column info, top 10 countries by GDP
+
+Includes basic visualization of top 10 GDP countries using Matplotlib
+
+# 🛠 Fixes / Improvements
+
+Implemented polite scraping headers with custom User-Agent
+
+Added folder check to create data/ if it doesn’t exist
+
+Ensured Jupyter Notebook compatibility with ipykernel
+
+# [1.1.0] – Planned Improvements
+
+Upcoming Features:
+
+Add multi-page scraping support (e.g., more Wikipedia tables)
+
+Include dynamic scraping with Selenium for JS-heavy pages
+
+Generate enhanced visualizations: choropleth maps and trend plots
+
+Add detailed documentation with examples and screenshots
+
+# 🔖 Notes
+
+Always follow Wikipedia robots.txt rules for ethical scraping
+
+CSV file is intended for EDA and visualization tasks in CodeAlpha Internship
+
+Recommended to run in VS Code or Jupyter Notebook with virtual environment
